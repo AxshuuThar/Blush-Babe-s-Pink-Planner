@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Solid purple background */
+        body {
+            background-color: #9C2897;
+            font-family: 'TT Ramillas', 'Playfair Display', serif;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Font import - add link to TT Ramillas if you have it */
+        @font-face {
+            font-family: 'TT Ramillas';
+            src: url('path-to-your-font/TTRamillas-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Main container */
+        .planner-container {
+            display: flex;
+            width: 100%;
+            max-width: 900px;
+            align-items: center;
+            gap: 180px;
+        }
+
+        /* Image side - smaller */
+        .image-side {
+            width: 100%;
+        }
+
+        .girl-img {
+            width: 100%;
+            max-width: 1000px; /* Smaller image */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Content side */
+        .content-side {
+            width: 80%;
+        }
+
+        .planner-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            position: relative; /* For sparkle positioning */
+        }
+
+        .pink-text {
+            color: #ff85a1;
+        }
+
+        .planner-tagline {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #ff85a1;
+            font-weight: 700;
+        }
+
+        /* Button styling */
+        .planner-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #fff, #ffe5ec, #fff);
+            color: #ff2e63;
+            padding: 15px 50px;
+            border-radius: 100px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background-size: 200% 100%;
+            animation: shine 3s infinite linear;
+        }
+
+        .planner-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+        }
+
+        .planner-button i {
+            margin-left: 6px;
+            font-size: 1.2em;
+            animation: twinkle 1.5s infinite ease-in-out;
+        }
+
+        /* Sparkle effect */
+        .sparkle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: sparkleAnimation 1s forwards;
+            z-index: 3;
+        }
+        
+        @keyframes sparkleAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.6;
+                transform: scale(0.9);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 900px) {
+            .planner-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 80px;
+            }
+            .image-side, .content-side {
+                width: 100%;
+            }
+            .girl-img {
+                max-width: 500px;
+                margin-bottom: 20px;
+            }
+            .planner-title {
+                font-size: 3.2rem;
+            }
+            .planner-tagline {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="planner-container">
+        <!-- Small image on left -->
+        <div class="image-side">
+            <img src="assets/images/girl.png" alt="Blush Babe Girl" class="girl-img">
+        </div>
+        
+        <div class="content-side">
+            <h1 class="planner-title">
+                <span class="blush-text">BLUSH BABE'S</span>
+                <span class="pink-text">Pink Planner</span>
+            </h1>
+            <p class="planner-tagline"><span class="highlight">Hey</span> gorgeous! Ready to slay your day? Let's plan your dreams, one cute tick at a time!</p>
+            <a href="pages/daily-planner.html" class="planner-button button-pop">
+                Start Planning <i class="fa-solid fa-sparkles"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Title sparkle effect
+            const mainTitle = document.querySelector('.planner-title');
+            
+            if (mainTitle) {
+                setInterval(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.classList.add('sparkle');
+                    
+                    const x = Math.random() * mainTitle.offsetWidth;
+                    const y = Math.random() * mainTitle.offsetHeight;
+                    
+                    sparkle.style.left = `${x}px`;
+                    sparkle.style.top = `${y}px`;
+                    
+                    mainTitle.appendChild(sparkle);
+                    
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 1000);
+                }, 300);
+            }
+            
+            // Adding sparkle effect to the button
+            const plannerButton = document.querySelector('.planner-button');
+            
+            if (plannerButton) {
+                setInterval(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.classList.add('sparkle');
+                    
+                    const x = Math.random() * plannerButton.offsetWidth;
+                    const y = Math.random() * plannerButton.offsetHeight;
+                    
+                    sparkle.style.left = `${x}px`;
+                    sparkle.style.top = `${y}px`;
+                    
+                    plannerButton.appendChild(sparkle);
+                    
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 800);
+                }, 400);
+            }
+        });
+    </script>
+</body>
+</html>
