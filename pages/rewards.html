@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Rewards - Blush Babe's Pink Planner</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/planner.css">
+    <link rel="stylesheet" href="../css/rewards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="planner-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h3>Blush Babe's</h3>
+                <h4>Pink Planner</h4>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="daily-planner.html">Daily Glow-Up</a></li>
+                    <li class="active"><a href="rewards.html">Pretty Rewards</a></li>
+                    <li><a href="self-love.html">Self-Love Shower</a></li>
+                    <li><a href="period-tracker.html">Cycle Tracker</a></li>
+                    <li><a href="../index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Pretty Rewards 💝</h1>
+                <p>Treat yourself for being the baddie that you are!</p>
+            </header>
+            
+            <!-- Points Display -->
+            <div class="points-container">
+                <div class="points-display">
+                    <div class="points-value" id="points-value">0</div>
+                    <div class="points-label">Baddie Points</div>
+                </div>
+                <div class="points-description">
+                    Complete tasks in your Daily Glow-Up to earn points and unlock fabulous rewards!
+                </div>
+            </div>
+            
+            <!-- Rewards Shop -->
+            <div class="rewards-container">
+                <h2>Rewards Shop</h2>
+                
+                <div class="rewards-grid">
+                    <!-- Reward 1 -->
+                    <div class="reward-card" data-cost="50">
+                        <div class="reward-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>At-Home Spa</h3>
+                        <p>50 points</p>
+                        <button class="reward-button">Claim Reward</button>
+                    </div>
+                    
+                    <!-- Reward 2 -->
+                    <div class="reward-card" data-cost="100">
+                        <div class="reward-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Movie Night</h3>
+                        <p>100 points</p>
+                        <button class="reward-button">Claim Reward</button>
+                    </div>
+                    
+                    <!-- Reward 3 -->
+                    <div class="reward-card" data-cost="150">
+                        <div class="reward-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3>Small Treat</h3>
+                        <p>150 points</p>
+                        <button class="reward-button">Claim Reward</button>
+                    </div>
+                    
+                    <!-- Reward 4 -->
+                    <div class="reward-card" data-cost="200">
+                        <div class="reward-icon">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <h3>Dessert Date</h3>
+                        <p>200 points</p>
+                        <button class="reward-button">Claim Reward</button>
+                    </div>
+                    
+                    <!-- Reward 5 -->
+                    <div class="reward-card" data-cost="300">
+                        <div class="reward-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>New Outfit</h3>
+                        <p>300 points</p>
+                        <button class="reward-button">Claim Reward</button>
+                    </div>
+                    
+                    <!-- Reward 6 -->
+                    <div class="reward-card" data-cost="500">
+                        <div class="reward-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Big Splurge</h3>
+                        <p>500 points</p>
+                        <button class="reward-button">Claim Reward</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Redeemed Rewards -->
+            <div class="redeemed-container">
+                <h2>Your Claimed Rewards</h2>
+                <div id="redeemed-rewards" class="redeemed-list">
+                    <!-- Claimed rewards will appear here -->
+                    <div class="no-rewards">No rewards claimed yet - keep slaying to earn treats!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Confetti Container -->
+    <div id="confetti-container" class="confetti-container"></div>
+    
+    <!-- Success Message Template -->
+    <div id="success-message" class="success-message hidden"></div>
+    
+    <script src="../js/rewards.js"></script>
+</body>
+</html>
