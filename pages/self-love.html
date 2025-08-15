@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Love Shower - Blush Babe's Pink Planner</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/planner.css">
+    <link rel="stylesheet" href="../css/self-love.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="planner-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h3>Blush Babe's</h3>
+                <h4>Pink Planner</h4>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="daily-planner.html">Daily Glow-Up</a></li>
+                    <li><a href="rewards.html">Pretty Rewards</a></li>
+                    <li class="active"><a href="self-love.html">Self-Love Shower</a></li>
+                    <li><a href="period-tracker.html">Cycle Tracker</a></li>
+                    <li><a href="../index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Self-Love Shower 💋</h1>
+                <p>Celebrate your achievements and embrace your amazing self!</p>
+            </header>
+            
+            <!-- Reflection Card -->
+            <div class="reflection-card">
+                <h2>Today's Reflection</h2>
+                <div class="reflection-form">
+                    <div class="form-group">
+                        <label for="gratitude">3 Things I'm Grateful For Today:</label>
+                        <textarea id="gratitude" placeholder="I'm grateful for..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="proud">What Made Me Proud Today:</label>
+                        <textarea id="proud" placeholder="I'm proud of..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tomorrow">Tomorrow I Will:</label>
+                        <textarea id="tomorrow" placeholder="Tomorrow I will..."></textarea>
+                    </div>
+                    
+                    <button id="save-reflection" class="reflection-button">Save My Reflection</button>
+                </div>
+            </div>
+            
+            <!-- Affirmation Generator -->
+            <div class="affirmation-card">
+                <h2>Daily Affirmation</h2>
+                <div class="affirmation-content">
+                    <p id="affirmation-text">Click the button to get your daily affirmation!</p>
+                    <button id="generate-affirmation" class="affirmation-button">Generate Affirmation</button>
+                </div>
+            </div>
+            
+            <!-- Past Reflections -->
+            <div class="past-reflections">
+                <h2>My Past Reflections</h2>
+                <div id="reflections-container" class="reflections-container">
+                    <!-- Past reflections will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating Hearts -->
+    <div class="floating-hearts-container"></div>
+    
+    <script src="../js/self-love.js"></script>
+</body>
+</html>
