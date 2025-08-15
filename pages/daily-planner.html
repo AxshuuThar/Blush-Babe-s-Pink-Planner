@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycle Tracker - Blush Babe's Pink Planner</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/planner.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fallback Styles -->
+    <style>
+        body {
+            background-color: #9C2897;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .cycle-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="planner-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h3>Blush Babe's</h3>
+                <h4>Pink Planner</h4>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="daily-planner.html">Daily Glow-Up</a></li>
+                    <li><a href="rewards.html">Pretty Rewards</a></li>
+                    <li><a href="self-love.html">Self-Love Shower</a></li>
+                    <li><a href="period-tracker.html">Cycle Tracker</a></li>
+                    <li><a href="../index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+            
+            
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Set Up Your Daily Glow-Up! ✨</h1>
+                <p>Plan your pretty girl activities and slay the day!</p>
+            </header>
+            
+            <!-- Task Creation -->
+            <div class="task-creation">
+                <select id="task-template" class="task-dropdown">
+                    <option value="">Choose a flirty task or create your own...</option>
+                    <option value="Slay my skincare routine like a glowing goddess">Slay my skincare routine like a glowing goddess 🌷</option>
+                    <option value="Hydrate like the baddie I am">Hydrate like the baddie I am 🍓</option>
+                    <option value="Romanticize my life & take cute mirror selfies">Romanticize my life & take cute mirror selfies 🎀</option>
+                    <option value="custom">Add my own baddie goal...</option>
+                </select>
+                
+                <div id="custom-task-container" class="custom-task-container hidden">
+                    <input type="text" id="custom-task" placeholder="Type your own baddie goal here..." class="custom-task-input">
+                </div>
+                
+                <button id="add-task" class="add-button">Add Task</button>
+            </div>
+            
+            <!-- Task List -->
+            <div class="task-list-container">
+                <h2>Today's Glow-Up Tasks</h2>
+                <ul id="task-list" class="task-list">
+                    <!-- Tasks will be added here -->
+                </ul>
+            </div>
+            
+            <!-- Progress & Love Note -->
+            <div class="progress-container">
+                <h2>Your Baddie Progress 💖</h2>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar" style="width: 0%;">0%</div>
+                </div>
+                
+                <div id="love-note" class="love-note hidden">
+                    <h3>Self-Love Note 💋</h3>
+                    <p id="love-note-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Heart Burst Animation Container -->
+    <div id="heart-burst-container" class="heart-burst-container"></div>
+    
+    <!-- Confetti Container -->
+    <div id="confetti-container" class="confetti-container"></div>
+    
+    <script src="../js/planner.js"></script>
+</body>
+</html>
