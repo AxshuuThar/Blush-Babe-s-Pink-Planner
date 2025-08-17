@@ -59,12 +59,13 @@ Blush Babe's Pink Planner is a **feminine, interactive web application**💖 des
 - **Date Calculations:** Predicts cycle length and ovulation.  
 - **Interactive Symptom Grid:** Emoji-based selection with `selected` states.  
 - **LocalStorage:** Securely stores cycle history.  
-- **Accessibility:** ARIA labels for screen readers.  
+- **Accessibility:** ARIA labels for screen readers.
+- 
 ![PERIOD TRACKER](images/periodtracker1.png)
 
 ![PERIOD TRACKER](images/periodtracker2.png)
 
-![PERIOD TRACKER](images/periodtracker1.png)
+![PERIOD TRACKER](images/periodtracker3.png)
 
 ---
 
