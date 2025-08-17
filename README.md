@@ -39,6 +39,10 @@ Blush Babe's Pink Planner is a **feminine, interactive web application**💖 des
 - **Animations:** Confetti burst on full completion (CSS + JS).  
 - **Integration with Rewards:** Points sync via `window.addRewardPoints()`.  
 
+![DAILY PLANNER1](images/planner1.png)
+
+![DAILY PLANNER2](images/planner2.png)
+
 ---
 
 ### **3. Period Tracker (period-tracker.html)**  
@@ -56,6 +60,11 @@ Blush Babe's Pink Planner is a **feminine, interactive web application**💖 des
 - **Interactive Symptom Grid:** Emoji-based selection with `selected` states.  
 - **LocalStorage:** Securely stores cycle history.  
 - **Accessibility:** ARIA labels for screen readers.  
+![PERIOD TRACKER](images/periodtracker1.png)
+
+![PERIOD TRACKER](images/periodtracker2.png)
+
+![PERIOD TRACKER](images/periodtracker1.png)
 
 ---
 
@@ -73,6 +82,10 @@ Blush Babe's Pink Planner is a **feminine, interactive web application**💖 des
 - **Confetti Animation:** Celebratory effect on redemption.  
 - **Data Sync:** Connects with `planner.js` for point updates.  
 
+![REWARDS](images/rewards1.png)
+
+![REWARDS](images/rewards2.png)
+
 ---
 
 ### **5. Self-Love Section (self-love.html)**  
@@ -87,7 +100,11 @@ Blush Babe's Pink Planner is a **feminine, interactive web application**💖 des
 **Technical Highlights:**  
 - **LocalStorage:** Saves reflections.  
 - **Affirmation Pool:** Randomly selects from predefined messages.  
-- **CSS Animations:** Hearts float upward continuously.  
+- **CSS Animations:** Hearts float upward continuously.
+- 
+![SELF LOVE](images/selflove1.png)
+
+![SELF LOVE](images/selflove2.png)
 
 ---
 
