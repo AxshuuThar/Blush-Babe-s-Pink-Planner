@@ -20,7 +20,7 @@ Blush Babe's Pink Planner is a **feminine, interactive web application**💖 des
 - **Font Awesome Icons:** Decorative sparkle emoji (`fa-sparkles`).  
 - **Mobile Optimization:** Media queries ensure usability on all devices.  
 
-![HOME PAGE](images/home.png)
+![HOME PAGE](images/homepage.png)
 
 ---
 
